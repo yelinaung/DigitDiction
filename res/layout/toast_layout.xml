@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/toast_layout_root"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:padding="10dip"
+  android:fadingEdge="horizontal"
+  android:bottomRightRadius="7dp" 
+  android:bottomLeftRadius="7dp" 
+  android:topLeftRadius="7dp" 
+  android:topRightRadius="7dp"
+  android:background="#E1E6E2"
+ >
+	<ImageView
+	android:id="@+id/ok"
+	android:src="@drawable/creep2"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" />
+  	<TextView 
+  		android:id="@+id/toast_text"
+  		android:layout_width="wrap_content"
+  		android:layout_height="fill_parent"
+  		android:layout_marginRight="10dp"
+  		android:textColor="#353535" 
+	/>
+</LinearLayout>

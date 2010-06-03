@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+           <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+			<TextView
+		  		android:id="@+id/s1"
+		  		android:text="အၾကံအစည္ေအာင္ျမင္မည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>		  	
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"
+        		android:fadingEdge="horizontal"/>
+		  	<TextView
+		  		android:id="@+id/s2"
+		  		android:text="ယခုု ၾကံရြယ္ထားသူႏွင့္ အဆင္ေျပပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>	
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s3"
+		  		android:text="သူက ေမတၱာရွိပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s4"
+		  		android:text="စာေမးပြဲေအာင္မည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>	
+		  	<TextView
+		  		android:id="@+id/s5"
+		  		android:text="ထီေပါက္ပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s6"
+		  		android:text="တရားႏိုင္ပါမည္လား ?"  		
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s7"
+		  		android:text="ေပ်ာက္ေသာဥစၥာ ျပန္ရပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s8"
+		  		android:text="လူမမာ ခ်မ္းသာပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s9"
+		  		android:text="ယခုုအလုုပ္ ေငြရပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s10"
+		  		android:text="ေရွ႕လာမည္ႏွစ္ စီးပြားတိုုးတက္ပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		 	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/> 	
+		  	<TextView
+		  		android:id="@+id/s11"
+		  		android:text="ရန္သူက ႏိုုင္ပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s12"
+		  		android:text="သူႏွင့္လက္ထပ္လွ်င္ ေကာင္းပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>	
+		  	<TextView
+		  		android:id="@+id/s13"
+		  		android:text="ကၽြႏုု္ပ္၏ မိတ္ေဆြ သစၥာရွိပါမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  	<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>
+		  	<TextView
+		  		android:id="@+id/s14"
+		  		android:text="ယေန႔ ကံေကာင္းပါမည္လား?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+			<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>	  	
+		  	<TextView
+		  		android:id="@+id/s15"
+		  		android:text="သားေမြးမည္လား ၊ သမီးေမြးမည္လား ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+			<View
+        		android:layout_height="2dip"
+        		android:background="#FF909090"
+        		android:layout_width="fill_parent"/>	 
+		  	<TextView
+		  		android:id="@+id/s16"
+		  		android:text="မည္သည့္ အလုုပ္အကိုုင္ႏွင့္ ေတာ္ပါမည္နည္း ?"
+		  		android:layout_height="fill_parent"
+		        android:layout_width="fill_parent"
+		  		android:padding="5dip" 
+		  		android:typeface="monospace"
+		  		android:focusable="true"/>
+		  </LinearLayout>
+  		</ScrollView>
+  	</LinearLayout>
+</LinearLayout>
