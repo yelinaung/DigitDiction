@@ -1,9 +1,9 @@
-package com.novastep.digitdiction;
+package net.mgpyone.digitdiction;
 
 import java.util.Random;
 
+import net.mgpyone.digitdiction.Predictions;
 import net.mgpyone.digitdiction.R;
-import com.novastep.digitdiction.Predictions;
 
 import android.app.Activity;
 import android.graphics.Typeface;

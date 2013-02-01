@@ -1,9 +1,9 @@
-package com.novastep.digitdiction;
+package net.mgpyone.digitdiction;
 
 public class Predictions {
         public static final String[][] results = {
                         {
-                                "၁ ။  ေမွ်ာ္လင့္ခ်က္ မရွိပါ။",
+                               	"၁ ။  ေမွ်ာ္လင့္ခ်က္ မရွိပါ။",
                                 "၂ ။  အားလုံး ျပည့္စုံ ေအာင္ျမင္ပါမည္။",
                                 "၃ ။  ယခုအခါ အထ မေျမာက္ႏိုင္ပါ။",
                                 "၄ ။  မျပည့္စုံ မေအာင္ျမင္ေသးပါ။",
