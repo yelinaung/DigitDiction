@@ -1,4 +1,4 @@
 DigitDiction
 ============
 
-it's a small Myanmar Android app about Finger Point Astrologer
+A tiny android app about Myanmar Finger Point Astrology
