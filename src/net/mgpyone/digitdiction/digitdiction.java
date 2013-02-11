@@ -5,6 +5,7 @@ import java.util.Random;
 import net.mgpyone.digitdiction.Predictions;
 import net.mgpyone.digitdiction.R;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+@SuppressLint("ShowToast")
 public class digitdiction extends Activity implements  OnClickListener
 {
 	
@@ -136,8 +138,7 @@ public class digitdiction extends Activity implements  OnClickListener
 			e.printStackTrace();
 		}
 
-    }
-    
+    } 
 	
     @Override
 	public void onStop(){

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -20,7 +18,7 @@
               android:layout_height="fill_parent">
 			<TextView
 		  		android:id="@+id/s1"
-		  		android:text="အၾကံအစည္ေအာင္ျမင္မည္လား ?"
+		  		android:text="@string/s1"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -33,7 +31,7 @@
         		android:fadingEdge="horizontal"/>
 		  	<TextView
 		  		android:id="@+id/s2"
-		  		android:text="ယခုု ၾကံရြယ္ထားသူႏွင့္ အဆင္ေျပပါမည္လား ?"
+		  		android:text="@string/s2"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -45,7 +43,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s3"
-		  		android:text="သူက ေမတၱာရွိပါမည္လား ?"
+		  		android:text="@string/s3"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -57,7 +55,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s4"
-		  		android:text="စာေမးပြဲေအာင္မည္လား ?"
+		  		android:text="@string/s4"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -69,7 +67,7 @@
         		android:layout_width="fill_parent"/>	
 		  	<TextView
 		  		android:id="@+id/s5"
-		  		android:text="ထီေပါက္ပါမည္လား ?"
+		  		android:text="@string/s5"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -81,7 +79,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s6"
-		  		android:text="တရားႏိုင္ပါမည္လား ?"  		
+		  		android:text="@string/s6"  		
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -93,7 +91,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s7"
-		  		android:text="ေပ်ာက္ေသာဥစၥာ ျပန္ရပါမည္လား ?"
+		  		android:text="@string/s7"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -105,7 +103,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s8"
-		  		android:text="လူမမာ ခ်မ္းသာပါမည္လား ?"
+		  		android:text="@string/s8"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -117,7 +115,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s9"
-		  		android:text="ယခုုအလုုပ္ ေငြရပါမည္လား ?"
+		  		android:text="@string/s9"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -129,7 +127,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s10"
-		  		android:text="ေရွ႕လာမည္ႏွစ္ စီးပြားတိုုးတက္ပါမည္လား ?"
+		  		android:text="@string/s10"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -141,7 +139,7 @@
         		android:layout_width="fill_parent"/> 	
 		  	<TextView
 		  		android:id="@+id/s11"
-		  		android:text="ရန္သူက ႏိုုင္ပါမည္လား ?"
+		  		android:text="@string/s11"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -153,7 +151,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s12"
-		  		android:text="သူႏွင့္လက္ထပ္လွ်င္ ေကာင္းပါမည္လား ?"
+		  		android:text="@string/s12"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -165,7 +163,7 @@
         		android:layout_width="fill_parent"/>	
 		  	<TextView
 		  		android:id="@+id/s13"
-		  		android:text="ကၽြႏုု္ပ္၏ မိတ္ေဆြ သစၥာရွိပါမည္လား ?"
+		  		android:text="@string/s13"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -177,7 +175,7 @@
         		android:layout_width="fill_parent"/>
 		  	<TextView
 		  		android:id="@+id/s14"
-		  		android:text="ယေန႔ ကံေကာင္းပါမည္လား?"
+		  		android:text="@string/s14"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -189,7 +187,7 @@
         		android:layout_width="fill_parent"/>	  	
 		  	<TextView
 		  		android:id="@+id/s15"
-		  		android:text="သားေမြးမည္လား ၊ သမီးေမြးမည္လား ?"
+		  		android:text="@string/s15"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
@@ -201,7 +199,7 @@
         		android:layout_width="fill_parent"/>	 
 		  	<TextView
 		  		android:id="@+id/s16"
-		  		android:text="မည္သည့္ အလုုပ္အကိုုင္ႏွင့္ ေတာ္ပါမည္နည္း ?"
+		  		android:text="@string/s16"
 		  		android:layout_height="fill_parent"
 		        android:layout_width="fill_parent"
 		  		android:padding="5dip" 
