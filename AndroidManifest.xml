@@ -8,8 +8,13 @@
 		android:largeScreens="true"
 		android:normalScreens="true"
 		android:resizeable="true"
-		android:smallScreens="true"/> 
-    <application android:icon="@drawable/creep" android:label="@string/app_name">
+		android:smallScreens="true"/>
+	<uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    <application android:icon="@drawable/creep" 
+        android:label="@string/app_name"
+        android:allowBackup="true">
         <activity android:name=".digitdiction"
                   android:label="@string/app_name">
             <intent-filter>
