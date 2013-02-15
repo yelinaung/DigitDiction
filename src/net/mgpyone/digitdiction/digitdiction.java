@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 
 @SuppressLint("ShowToast")
-public class digitdiction extends Activity implements  OnClickListener
+public class DigitDiction extends Activity implements  OnClickListener
 {
 	private Toast toast;
 	
@@ -96,7 +96,7 @@ public class digitdiction extends Activity implements  OnClickListener
 					toast.show();
 				}
 				catch (Exception e) {
-					Toast.makeText(digitdiction.this,"Exception:" +e, 50000);
+					Toast.makeText(DigitDiction.this,"Exception:" +e, 50000);
 				}
 			}  	
 		};

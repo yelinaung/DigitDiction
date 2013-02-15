@@ -27,7 +27,7 @@ public class Splash extends Activity {
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
-				Intent main = new Intent(getApplicationContext(), digitdiction.class);
+				Intent main = new Intent(getApplicationContext(), DigitDiction.class);
 				startActivity(main);
 				finish();
 			}
