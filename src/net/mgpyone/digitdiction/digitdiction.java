@@ -34,7 +34,6 @@ public class digitdiction extends Activity implements  OnClickListener
         		(ViewGroup) findViewById(R.id.toast_layout_root));
         
         final TextView text = (TextView) layout.findViewById(R.id.toast_text);
-	    //final Toast toast = new Toast(getApplicationContext());
         toast = new Toast(this);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.setDuration(Toast.LENGTH_LONG);
@@ -103,7 +102,6 @@ public class digitdiction extends Activity implements  OnClickListener
 				}
 			}  	
 		};
-		
 
         try {
         TextView[] tv;

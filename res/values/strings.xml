@@ -16,5 +16,6 @@
     <string name="s13">ကၽြႏုု္ပ္၏ မိတ္ေဆြ သစၥာရွိပါမည္လား ?</string>
     <string name="s14">ယေန႔ ကံေကာင္းပါမည္လား?</string>
     <string name="s15">သားေမြးမည္လား ၊ သမီးေမြးမည္လား ?</string>
-    <string name="s16">မည္သည့္ အလုုပ္အကိုုင္ႏွင့္ ေတာ္ပါမည္နည္း ?</string>                    
+    <string name="s16">မည္သည့္ အလုုပ္အကိုုင္ႏွင့္ ေတာ္ပါမည္နည္း ?</string>   
+   	<string name="splash">Hello World, Splash</string>                 
 </resources>
