@@ -21,7 +21,6 @@ import android.widget.Toast;
 @SuppressLint("ShowToast")
 public class digitdiction extends Activity implements  OnClickListener
 {
-	
 	private Toast toast;
 	
     @Override  
@@ -39,7 +38,6 @@ public class digitdiction extends Activity implements  OnClickListener
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
         final OnClickListener clickListener = new OnClickListener() {
-
 	        
         	public void onClick(View v) {
 				try {
@@ -98,7 +96,7 @@ public class digitdiction extends Activity implements  OnClickListener
 					toast.show();
 				}
 				catch (Exception e) {
-					Toast.makeText(digitdiction.this,"Exception:" +e, 500000);
+					Toast.makeText(digitdiction.this,"Exception:" +e, 50000);
 				}
 			}  	
 		};

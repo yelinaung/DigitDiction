@@ -3,7 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,5 +10,11 @@
         android:drawableRight="@drawable/splash"
         android:padding="5dp"
         android:text="@+id/splash" />
-
+    <ImageView 
+        android:id="@+id/splashimg" 
+        android:layout_width="wrap_content" 
+       	android:layout_height="wrap_content"
+       	android:src="@drawable/splash"	
+       	android:layout_gravity = "center"
+       	android:contentDescription="@string/description" />
   </LinearLayout>
