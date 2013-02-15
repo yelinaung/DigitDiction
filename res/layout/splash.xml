@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:contentDescription="@string/description"
+        android:scaleType="fitXY"
         android:src="@drawable/splash" />
 
 </LinearLayout>
