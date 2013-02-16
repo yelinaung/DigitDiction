@@ -3,18 +3,15 @@
     package="net.mgpyone.digitdiction"
     android:versionCode="1"
     android:versionName="1.0" >
-
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
         android:normalScreens="true"
         android:resizeable="true"
         android:smallScreens="true" />
-
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="17" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/creep"
@@ -24,12 +21,10 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".DigitDiction" >
         </activity>
     </application>
-
 </manifest>
