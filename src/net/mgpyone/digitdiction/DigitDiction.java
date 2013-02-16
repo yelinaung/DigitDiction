@@ -23,7 +23,6 @@ public class DigitDiction extends ListActivity {
 
     private int mActivePosition = -1;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
