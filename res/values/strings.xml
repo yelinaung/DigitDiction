@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Digit Diction</string>
-    <string name="s1">အၾကံအစည္ေအာင္ျမင္မည္လား ?</string>
-    <string name="s2">ယခုု ၾကံရြယ္ထားသူႏွင့္ အဆင္ေျပပါမည္လား ?</string>
-    <string name="s3">သူက ေမတၱာရွိပါမည္လား ?</string>
-    <string name="s4">စာေမးပြဲေအာင္မည္လား ?</string>
-    <string name="s5">ထီေပါက္ပါမည္လား ?</string>
-    <string name="s6">တရားႏိုင္ပါမည္လား ?</string>
-    <string name="s7">ေပ်ာက္ေသာဥစၥာ ျပန္ရပါမည္လား ?</string>
-    <string name="s8">လူမမာ ခ်မ္းသာပါမည္လား ?</string>
-    <string name="s9">ယခုုအလုုပ္ ေငြရပါမည္လား ?</string>
-    <string name="s10">ေရွ႕လာမည္ႏွစ္ စီးပြားတိုုးတက္ပါမည္လား ?"</string>
-    <string name="s11">ရန္သူက ႏိုုင္ပါမည္လား ?</string>
-    <string name="s12">သူႏွင့္လက္ထပ္လွ်င္ ေကာင္းပါမည္လား ?</string>
-    <string name="s13">ကၽြႏုု္ပ္၏ မိတ္ေဆြ သစၥာရွိပါမည္လား ?</string>
-    <string name="s14">ယေန႔ ကံေကာင္းပါမည္လား?</string>
-    <string name="s15">သားေမြးမည္လား ၊ သမီးေမြးမည္လား ?</string>
-    <string name="s16">မည္သည့္ အလုုပ္အကိုုင္ႏွင့္ ေတာ္ပါမည္နည္း ?</string>   
+    <string name="app_name">Digit Diction</string>   
    	<string name="splash">Hello World, Splash</string>                 
    	<string name="description">Hi</string>
 </resources>
