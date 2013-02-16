@@ -7,8 +7,6 @@ import java.util.List;
 import android.app.ListActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -16,52 +14,56 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/* TODO ListView smooth scroll
+ * (dafaq! listview is not scrolling smoothly is only on my Note2. It works well even on Huawei!!! :/)
+ * */
 public class DigitDiction extends ListActivity {
 
+    private static final String STATE_ACTIVE_POSITION = "net.mgpyone.digitdiction.DigitDiction.activePosition";
+
     private DigitAdapter mAdapter;
-    private Toast toast;
+
+    private int mActivePosition = -1;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        if (savedInstanceState != null)
+            mActivePosition = savedInstanceState.getInt(STATE_ACTIVE_POSITION);
 
         mAdapter = new DigitAdapter();
         String[] mQuestions = getResources().getStringArray(R.array.questions);
 
-        for (int i = 1; i < mQuestions.length; i++) {
+        for (int i = 0; i < mQuestions.length; i++) {
             mAdapter.addQuestions(mQuestions[i], i);
         }
 
         setListAdapter(mAdapter);
 
-        LayoutInflater inflater = getLayoutInflater();
-        final View layout = inflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
-
-        final TextView text = (TextView) layout.findViewById(R.id.toast_text);
-        toast = new Toast(this);
-        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-        toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
+        // LayoutInflater inflater = getLayoutInflater();
+        // final View layout = inflater.inflate(R.layout.toast_layout, (ViewGroup)
+        // findViewById(R.id.toast_layout_root));
+        // final TextView text = (TextView) layout.findViewById(R.id.toast_text);
+        // toast = new Toast(this);
+        // toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        // toast.setDuration(Toast.LENGTH_LONG);
+        // toast.setView(layout);
     }
 
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        toast.cancel();
-    }
-
-
+    // TODO make toast for answer.
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
+        mActivePosition = position;
         DigitQuestion question = (DigitQuestion) mAdapter.getItem(position);
         switch (question.mId) {
-            case 1:
-                Toast.makeText(this, "Hello 1", Toast.LENGTH_LONG).show();
+            case 0:
+                Toast.makeText(this, "This is test", Toast.LENGTH_SHORT).show();
                 break;
 
             default:
+                Toast.makeText(this, "Not yet implemented!", Toast.LENGTH_SHORT).show();
                 break;
         }
 
@@ -122,5 +124,17 @@ public class DigitDiction extends ListActivity {
             return v;
         }
 
+    }
+    
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(STATE_ACTIVE_POSITION, mActivePosition);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        // toast.cancel();
     }
 }
