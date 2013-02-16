@@ -1,9 +1,7 @@
-
 package net.mgpyone.digitdiction;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import android.app.ListActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -72,7 +70,6 @@ public class DigitDiction extends ListActivity {
     private static class DigitQuestion {
         String mQuestion;
         int mId;
-
 
         public DigitQuestion(String question, int id) {
             mQuestion = question;
