@@ -11,4 +11,4 @@ Download the latest build from [here] (http://cloud.mmdroid.com/MyU3).
 Your suggestions and feedbacks are most welcomed. Pls drop a line at [UseEcho] (http://digitdiction.userecho.com )
 
 ######Credits
-Special Thanks to Bro [Ravi](https://trello.com/ravichhabra) and [Hein Win Toe](https://github.com/HeinWinToe)
+Special Thanks to Bro [Ravi](https://github.com/ravichhabra) and [Hein Win Toe](https://github.com/HeinWinToe)
