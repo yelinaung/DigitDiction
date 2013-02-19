@@ -43,3 +43,11 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+Icon
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+.LSOverride
+.DS_Store?
