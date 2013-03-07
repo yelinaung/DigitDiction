@@ -18,7 +18,6 @@ public class DigitDiction extends ListActivity {
     
     Toast toast;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
