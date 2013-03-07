@@ -1,27 +1,22 @@
 package net.mgpyone.digitdiction;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
+
 import android.app.ListActivity;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-/* TODO ListView smooth scroll
- * (dafaq! listview is not scrolling smoothly is only on my Note2. It works well even on Huawei!!! :/)
- * */
 public class DigitDiction extends ListActivity {
 
     private static final String STATE_ACTIVE_POSITION = "net.mgpyone.digitdiction.DigitDiction.activePosition";
 
-    private DigitAdapter mAdapter;
+    private ListAdapter mAdapter;
 
     private int mActivePosition = -1;
+    
+    Toast toast;
 
 
     @Override
@@ -31,7 +26,7 @@ public class DigitDiction extends ListActivity {
         if (savedInstanceState != null)
             mActivePosition = savedInstanceState.getInt(STATE_ACTIVE_POSITION);
 
-        mAdapter = new DigitAdapter();
+        mAdapter = new ListAdapter(this);
         String[] mQuestions = getResources().getStringArray(R.array.questions);
 
         for (int i = 0; i < mQuestions.length; i++) {
@@ -43,82 +38,74 @@ public class DigitDiction extends ListActivity {
         // LayoutInflater inflater = getLayoutInflater();
         // final View layout = inflater.inflate(R.layout.toast_layout, (ViewGroup)
         // findViewById(R.id.toast_layout_root));
-        // final TextView text = (TextView) layout.findViewById(R.id.toast_text);
         // toast = new Toast(this);
         // toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         // toast.setDuration(Toast.LENGTH_LONG);
         // toast.setView(layout);
     }
 
-    // TODO make toast for answer.
+    // TODO make custom toast layout.
+    // is there any better way to write this code?
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         mActivePosition = position;
-        DigitQuestion question = (DigitQuestion) mAdapter.getItem(position);
+        ListAdapter.DigitQuestion question = (ListAdapter.DigitQuestion) mAdapter.getItem(position);
+        Integer day = new Random().nextInt(9);
         switch (question.mId) {
             case 0:
-                Toast.makeText(this, "This is test", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, Predictions.results[0][day], Toast.LENGTH_SHORT).show();
                 break;
-
+            case 1:
+                Toast.makeText(this, Predictions.results[1][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 2:
+                Toast.makeText(this, Predictions.results[2][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 3:
+                Toast.makeText(this, Predictions.results[3][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 4:
+                Toast.makeText(this, Predictions.results[4][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 5:
+                Toast.makeText(this, Predictions.results[5][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 6:
+                Toast.makeText(this, Predictions.results[6][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 7:
+                Toast.makeText(this, Predictions.results[7][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 8:
+                Toast.makeText(this, Predictions.results[8][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 9:
+                Toast.makeText(this, Predictions.results[9][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 10:
+                Toast.makeText(this, Predictions.results[10][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 11:
+                Toast.makeText(this, Predictions.results[11][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 12:
+                Toast.makeText(this, Predictions.results[12][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 13:
+                Toast.makeText(this, Predictions.results[13][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 14:
+                Toast.makeText(this, Predictions.results[14][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 15:
+                Toast.makeText(this, Predictions.results[15][day], Toast.LENGTH_SHORT).show();
+                break;
+            case 16:
+                Toast.makeText(this, Predictions.results[16][day], Toast.LENGTH_SHORT).show();
+                break;
             default:
                 Toast.makeText(this, "Not yet implemented!", Toast.LENGTH_SHORT).show();
                 break;
-        }
-
-    }
-
-    private static class DigitQuestion {
-        String mQuestion;
-        int mId;
-
-        public DigitQuestion(String question, int id) {
-            mQuestion = question;
-            mId = id;
-        }
-    }
-
-    public class DigitAdapter extends BaseAdapter {
-
-        private List<DigitQuestion> mQuestions = new ArrayList<DigitQuestion>();
-
-
-        public void addQuestions(String question, int id) {
-            mQuestions.add(new DigitQuestion(question, id));
-        }
-
-
-        @Override
-        public int getCount() {
-            return mQuestions.size();
-        }
-
-
-        @Override
-        public Object getItem(int position) {
-            return mQuestions.get(position);
-        }
-
-
-        @Override
-        public long getItemId(int position) {
-            return position;
-        }
-
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            DigitQuestion dQ = (DigitQuestion) getItem(position);
-
-            View v = convertView;
-            if (v == null) {
-                v = getLayoutInflater().inflate(R.layout.list_row, parent, false);
-            }
-
-            Typeface tf = Typeface.createFromAsset(getAssets(), "font/zawgyi.ttf");
-            ((TextView) v.findViewById(R.id.question)).setText(dQ.mQuestion);
-            ((TextView) v.findViewById(R.id.question)).setTypeface(tf);
-
-            return v;
         }
 
     }
