@@ -88,5 +88,17 @@
     -->
     <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml" />
+    
+    <target name="run-tests">
+  		<echo>Running tests...</echo>
+  		<exec executable="${adb}" failonerror="true">
+	    <arg line="${adb.device.arg}" />
+	    <arg value="shell" />
+	    <arg value="am" />
+	    <arg value="instrument" />
+	    <arg value="-w" />
+	    <arg value="${tested.manifest.package}/${test.runner}" />
+  		</exec>
+	</target>
 
 </project>
