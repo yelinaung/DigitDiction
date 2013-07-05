@@ -9,11 +9,8 @@ import android.widget.ImageView;
 @SuppressLint("HandlerLeak")
 public class Splash extends Activity {
 
-	private static final int STOPSPLASH = 0;
-	@SuppressWarnings("unused")
-	private static final int STOPSPLASH2 = STOPSPLASH;
 	//time in milliseconds
-	private static final long SPLASHTIME = 3000;
+	private static final long SPLASH_TIME = 3000;
 
 	@SuppressWarnings("unused")
 	private ImageView splash;
@@ -23,7 +20,7 @@ public class Splash extends Activity {
 		@Override
 		public void run() {
 			try {
-				Thread.sleep(SPLASHTIME);
+				Thread.sleep(SPLASH_TIME);
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
@@ -40,11 +37,7 @@ public class Splash extends Activity {
 		super.onCreate(icicle);
 		setContentView(R.layout.splash);
 		splash = (ImageView) findViewById(R.id.splashimg);
-		/*
-		Message msg = new Message();
-		msg.what = STOPSPLASH;
-		splashHandler.sendMessageDelayed(msg, SPLASHTIME);
-		*/
+
 		splashTread.start();
 	}
 }
