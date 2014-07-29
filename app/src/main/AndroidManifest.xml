@@ -17,7 +17,7 @@
     <uses-library android:name="android.test.runner"/>
     <activity
         android:label="@string/app_name"
-        android:name=".DigitDiction">
+        android:name="com.yelinaung.digitdiction.DigitDiction">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 

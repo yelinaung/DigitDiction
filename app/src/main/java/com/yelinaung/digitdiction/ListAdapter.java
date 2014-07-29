@@ -1,5 +1,5 @@
 
-package net.mgpyone.digitdiction;
+package com.yelinaung.digitdiction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import net.mgpyone.digitdiction.R;
 
 public class ListAdapter extends BaseAdapter {
     private final Activity context;

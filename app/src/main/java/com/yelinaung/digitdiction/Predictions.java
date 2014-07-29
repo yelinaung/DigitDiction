@@ -1,4 +1,4 @@
-package net.mgpyone.digitdiction;
+package com.yelinaung.digitdiction;
 
 public class Predictions {
         public static final String[][] results = {

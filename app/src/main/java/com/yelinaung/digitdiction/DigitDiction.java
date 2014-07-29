@@ -1,4 +1,4 @@
-package net.mgpyone.digitdiction;
+package com.yelinaung.digitdiction;
 
 import java.util.Random;
 
@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
+import net.mgpyone.digitdiction.R;
 
 public class DigitDiction extends ListActivity {
 
-	private static final String STATE_ACTIVE_POSITION = "net.mgpyone.digitdiction.DigitDiction.activePosition";
+	private static final String STATE_ACTIVE_POSITION = "com.yelinaung.digitdiction.DigitDiction.activePosition";
 
 	private ListAdapter mAdapter;
 
